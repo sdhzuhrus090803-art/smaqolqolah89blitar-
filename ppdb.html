@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PPDB | SMA Qolqolah 89 Blitar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0d47a1;
+        }
+
+        p {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1976d2;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #0d47a1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background: #e3f2fd;
+        }
+
+        form label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            background: #1976d2;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #0d47a1;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER PPDB -->
+    <h1>PPDB</h1>
+    <p>
+        <strong>Penerimaan Peserta Didik Baru</strong><br>
+        SMA Qolqolah 89 Blitar Tahun Ajaran 2026/2027
+    </p>
+
+    <!-- JADWAL -->
+    <div class="box">
+        <h2>Jadwal PPDB</h2>
+        <p>
+            Pendaftaran: <strong>1 – 15 Juni 2026</strong><br>
+            Pengumuman: <strong>20 Juni 2026</strong><br>
+            Daftar Ulang: <strong>21 – 25 Juni 2026</strong>
+        </p>
+        <p style="text-align:center;">
+            <a href="#form-ppdb" class="btn">Daftar Sekarang</a>
+        </p>
+    </div>
+
+    <!-- BIAYA PENDIDIKAN -->
+    <div class="box">
+        <h2>Biaya Pendidikan</h2>
+        <p>
+            SMA Qolqolah 89 Blitar menetapkan biaya pendidikan yang
+            <strong>terjangkau, transparan, dan sesuai dengan fasilitas serta program unggulan sekolah</strong>.
+        </p>
+
+        <table>
+            <tr>
+                <th>Jenis Biaya</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Biaya Pendaftaran</td>
+                <td>Rp 150.000</td>
+            </tr>
+            <tr>
+                <td>SPP Bulanan</td>
+                <td>Rp 250.000</td>
+            </tr>
+            <tr>
+                <td>Seragam Sekolah</td>
+                <td>Disesuaikan ketentuan sekolah</td>
+            </tr>
+        </table>
+
+        <p class="note">
+            *Tersedia keringanan biaya dan beasiswa bagi siswa berprestasi serta kurang mampu.
+        </p>
+    </div>
+
+    <!-- FORM PPDB -->
+    <div class="box" id="form-ppdb">
+        <h2>Formulir Pendaftaran PPDB</h2>
+
+        <form action="#" method="post">
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" required>
+
+            <label>Jenis Kelamin</label>
+            <select name="jk" required>
+                <option value="">-- Pilih --</option>
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+            </select>
+
+            <label>Tempat, Tanggal Lahir</label>
+            <input type="text" name="ttl" placeholder="Contoh: Blitar, 12 Januari 2010" required>
+
+            <label>Asal Sekolah</label>
+            <input type="text" name="asal_sekolah" required>
+
+            <label>Alamat Lengkap</label>
+            <textarea name="alamat" rows="3" required></textarea>
+
+            <label>Nomor HP / WhatsApp</label>
+            <input type="text" name="hp" required>
+
+            <label>Pilihan Program</label>
+            <select name="program">
+                <option>Reguler</option>
+                <option>Pondok / Boarding</option>
+            </select>
+
+            <button type="submit">Kirim Pendaftaran</button>
+        </form>
+
+        <p class="note">
+            Setelah mengisi formulir, panitia PPDB akan menghubungi calon peserta didik melalui WhatsApp.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
